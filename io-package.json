@@ -1,0 +1,107 @@
+{
+	"common": {
+		"name": "test_adapter",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "testing",
+		"titleLang": {
+			"en": "testing",
+			"de": "testing",
+			"ru": "testing",
+			"pt": "testing",
+			"nl": "testing",
+			"fr": "testing",
+			"it": "testing",
+			"es": "testing",
+			"pl": "testing",
+			"zh-cn": "testing"
+		},
+		"desc": {
+			"en": "nothing testing and creating adapter",
+			"de": "nothing testing and creating adapter",
+			"ru": "nothing testing and creating adapter",
+			"pt": "nothing testing and creating adapter",
+			"nl": "nothing testing and creating adapter",
+			"fr": "nothing testing and creating adapter",
+			"it": "nothing testing and creating adapter",
+			"es": "nothing testing and creating adapter",
+			"pl": "nothing testing and creating adapter",
+			"zh-cn": "nothing testing and creating adapter"
+		},
+		"authors": [
+			"kalyan_711 <kalyankandikatla001@gmail.com>"
+		],
+		"keywords": [
+			"wifi",
+			"iobroker"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "test_adapter.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/Kandikatlakalyan/ioBroker.test_adapter/main/admin/test_adapter.png",
+		"readme": "https://github.com/Kandikatlakalyan/ioBroker.test_adapter/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "lighting",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"supportCustoms": true,
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"on": "40",
+		"off": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

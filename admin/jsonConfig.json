@@ -1,0 +1,16 @@
+{
+	"i18n": true,
+	"type": "panel",
+	"items": {
+		"on": {
+			"type": "text",
+			"label": "on",
+			"newLine": true
+		},
+		"off": {
+			"type": "text",
+			"label": "off",
+			"newLine": true
+		}
+	}
+}
